@@ -1,0 +1,156 @@
+div {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #ffffff;
+  left: 0px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  left: 220px;
+}
+
+.filter label {
+  font-size: 16px;
+}
+
+.filter input {
+  padding: 5px;
+  font-size: 14px;
+  width: 200px; /* Default width for larger screens */
+}
+
+.filter button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filter button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td {
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #7b7eda;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #007B9A;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 720px) {
+  div {
+    margin: 0; /* Remove margins for full-width layout */
+    padding: 10px;
+  }
+
+  .filter {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .filter label, .filter input, .filter button {
+    font-size: 14px;
+    width: 100%; /* Full width for filter inputs */
+    max-width: 100%; /* Ensure it doesn't exceed parent container width */
+  }
+
+  table {
+    font-size: 12px;
+    width: 100%; /* Ensure table spans full width */
+  }
+
+  th, td {
+    padding: 6px;
+  }
+
+  button {
+    width: 100%; /* Buttons stretch full width */
+    padding: 12px;
+    margin: 5px 0;
+  }
+
+  .button {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .filter input, .filter button {
+    padding: 8px;
+  }
+
+  table {
+    font-size: 10px;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+  .filter {
+    gap: 5px;
+  }
+
+  .button {
+    gap: 5px;
+  }
+}

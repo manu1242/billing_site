@@ -1,0 +1,76 @@
+body {
+ /* Optional for fallback centering if .main-page doesn't work */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-page {
+    position: absolute; /* Make the element absolutely positioned */
+    top: 50%; /* Position the top edge at 50% of the parent */
+    left: 50%; /* Position the left edge at 50% of the parent */
+    transform: translate(-50%, -50%); /* Offset by half the element's size */
+    display: flex; /* Use flexbox for internal alignment */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 0; /* Remove border radius for a flat design */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width and height */
+    box-shadow: none; /* Remove shadow for simplicity */
+    width: 100%; /* Optionally, set width to 100% if needed */
+    max-width: 600px; /* Limit maximum width */
+  }
+  
+  /* Heading Style */
+  .main-page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Button Styles */
+  .main-page button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .main-page button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  .main-page button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-page h1 {
+      font-size: 1.8rem;
+    }
+  
+    .main-page button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-page h1 {
+      font-size: 1.5rem;
+    }
+  
+    .main-page button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  }
+  

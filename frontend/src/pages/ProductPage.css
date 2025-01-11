@@ -1,0 +1,14 @@
+.product-page {
+    padding: 20px;
+  }
+  
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  .products-list .product-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
